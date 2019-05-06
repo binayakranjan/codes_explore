@@ -1,0 +1,24 @@
+Requirements of the system:
+
+A)Functional Requirements::
++++++++++++++++++++++++++++
+1. Newsfeed will be generated based on the people, pages & groups the user
+follows.
+2. Embedded items may be images, videos or text.
+3. Feeds can be from one or many people, pages & groups.
+4. Feeds can be appended as when active users post.
+
+B)Non-functional Requirements::
++++++++++++++++++++++++++++++
+1. Latency between an active user's post and newsfeed appearance should be as
+minimum as possible eg 5-7 secs.
+2. Latency between the user's newsfeed request and rendering should be as
+minimum as possible eg 1-2 secs.
+
+Capacity Estimations:
+
+A) Traffic estimates:
++++++++++++++++++++++
+
+B) Storage estimates:
++++++++++++++++++++++
