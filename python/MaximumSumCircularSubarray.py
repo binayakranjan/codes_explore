@@ -35,14 +35,11 @@ class Solution:
             max_wrap += A[i]
             A[i] = -A[i]
         
-        # Max sum with wrap up will be array-sum - (max subarray sum of inverted array)
+        # Max sum with wrap up will be array-sum + (max subarray sum of inverted array)
         max_wrap = max_wrap + self.kadane(A)
         
-        # The maximum circular sum will be maximum of two sums
-        if max_wrap > max_kadane:
-            return max_wrap
-        else:
-            return max_kadane 
-    
+        # maximum possible sum of a non-empty subarray maximum of two sums
+        return max(max_wrap, max_kadane)
+
     #Time Complexity: O(n)
     #Space Complexity : O(1)
